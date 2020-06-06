@@ -22,8 +22,10 @@ A model is prepared through a training process in which it is required to make p
 #### Naïve Bayes
 
 #### KNN
+*finds a group of k objects in the training set that are closest to the test object, and bases the assignment of a label on the predominance of a particular class in this neighborhood. 
 
 #### Desicion Tree (Classification)
+*Decision trees are the most developed methods for partitioning sets of items into classes. 
 
 # Unsupervised Learning
 > the target is unknown (unknown class or even if any class structure exists) and the
@@ -40,5 +42,10 @@ model seeks to uncover some hidden classification or structure.
 #### Association Rules
 
 #### Clustering
+*separates data items into a number of groups or clusters such that items in the same cluster are more similar to each other and items in different clusters tend to be dissimilar, according to some measure of similarity or proximity. Differently from supervised learning, where training examples are associated with a class label that expresses the membership of every example to a class, clustering assumes no information about the distribution of the items, and it has the task to both discover the classes present in the data set and to assign items among such classes in the best way.
 
 #### K-means
+*K-means is one of the most used clustering algorithms based on a partitional strategy. K-means is an algorithm that minimizes the squared error of values from their respective cluster means. In this way K-means implements hard clustering, where each item is assigned to only one cluster 
+
+#### Bayesian Classification 
+*The Bayesian approach to unsupervised learning provides a probabilistic method to inductive inference. In Bayesian classification class membership is expressed probabilistically that is an item is not assigned to a unique class, instead it has a probability of belonging to each of the possible classes. The classes provide probabilities for all attribute values of each item. Class membership probabilities are then determined by combining all these probabilities. Class membership probabilities of each item must sum to 1, thus there are not precise boundaries for classes: every item must be a member of some class, even though we do not know which one. When every item has a probability of no more than 0.5 in any class, the classification is not well defined because it means that classes are abundantly overlapped. On the contrary, when the probability of each instance is about 0.99 in its most probable class, the classes are well separated.
