@@ -4,7 +4,7 @@
 [Orange Documentation](https://orange.biolab.si/docs/)
 
 :bulb: Comparison of algorithms:
-[towardsscience.com] (https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222) 
+[towardsscience. com] (https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222) 
 
 #### Data Sampler
 
