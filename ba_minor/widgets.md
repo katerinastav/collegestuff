@@ -8,13 +8,16 @@
 
 ## Data Sampler
 
+## Scatter Plot
+> With this you can answer questions like: "Agree or disagree? Wines with a higher alcohol content also have a higher sugar content.
+Explain your reasoning"
+
 ## Box Plot
 
  * Identify Outliers
+ * You have to see if things are not overlaping. If they are, then the variable is not good in seperating the values we are looking for. Example from the practise test. We want to see which variable predicts the quality of the wine better, all of the variables in the box plot overlap almost. The one that doesn't overlap much is the alcohol percentage therefore is a better variable to identify good quality wine.
 
-## Test and Score
-
-> We use Test and Score to test the quality of the model and compare it with other models. When it comes to Regression, the best algorithm is the one with the lowest RMSE. When it comes to classification, best practise is to first look at precision and recall. They need to be the highest they can, but they also influence each other. If you try to increase the one, most likely the othr will decrease. When different models have similar recall and precision values, look at the AUC value.  This needs to be high as well. CA from what I understood is pretty much worthless and doesn't say a lot about the efficiency of the model. But if you are asked to compare models, know that more answers can be right. What is important is to give an explanation for your answer so that the teachers understand your logic. 
+> We use Test and Score to test the quality of the model and compare it with other models. When it comes to Regression, the best algorithm is the one with the lowest RMSE. But sipler models are preferred because they are more general and probably can predict better with new data. SO for example, if you have to regression models and the one has fewer features, because it used lasso regularization, it might be a better model. When it comes to classification, best practise is to first look at precision and recall. They need to be the highest they can, but they also influence each other. If you try to increase the one, most likely the othr will decrease. When different models have similar recall and precision values, look at the AUC value.  This needs to be high as well. CA from what I understood is pretty much worthless and doesn't say a lot about the efficiency of the model. But if you are asked to compare models, know that more answers can be right. What is important is to give an explanation for your answer so that the teachers understand your logic. 
 
 * Test on train data uses the whole dataset for training and then for testing. This method practically always gives wrong results.
 * Test on test data: the above methods use the data from Data signal only. 
@@ -64,6 +67,8 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 :warning: It is usually best to report the root mean squared error (RMSE)rather than mean squared error (MSE), because the RMSE ismeasured in the same units as the data, rather than in squaredunits, and is representative of the size of a "typical" error. 
 
 :warning: If one model's RMSE is 30% lower than another's, that is prob-ably very significant. If it is 10% lower, that is probably some-what significant. If it is only 2% better, that is probably not sig-nificant. These distinctions are especially important when weare trading off model complexity against the error measures: itis probably not worth adding another independent variable to aregression model to decrease the RMSE by only a few morepercent.
+
+:warning: If the RMSE difference is not significant between two models, the model with less features, that is simpler, might be preferred.
 
 [Source] (https://www.academia.edu/8738608/PERFORMANCE_COMPARISON_OF_TIME_SERIES_DATA_USING_PREDICTIVE_DATA_MINING_TECHNIQUES)
 
