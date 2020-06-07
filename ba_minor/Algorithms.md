@@ -14,6 +14,18 @@ A model is prepared through a training process in which it is required to make p
 > To predict the outcome of a given sample where the output variable is in the form of real values. Examples include real-valued labels denoting the amount of rainfall, the height of a person.
 
 #### Simple Linear Regression
+> Based on 1 predictor variable X, trying to predict the
+value of 1 continuous output variable Y.
+
+###### p-values:
+> probability to find this value by chance for a
+coefficient with the model in the training data if that
+coefficient in the population equals zero.
+> Low p-value: coefficient significantly different from
+zero, contributes ‘effectively’ to the prediction.
+ * In the majority of analyses, an alpha of 0.05 is used as the cutoff for significance. If the p-value is less than 0.05, we reject the null hypothesis that there's no difference between the means and conclude that a significant difference does exist. If the p-value is larger than 0.05, we cannot conclude that a significant difference exists. 
+ 
+ Long story short, p value needs to be lower than a (the one we learned in statistics) If no a is given then we assume 0.05 which means that the p-value needs to be under 0.05 for the results to be statistically significant. O.O51 is not statistically significant!!!
 
 ++ Easy simple implementation
 
@@ -39,6 +51,9 @@ A model is prepared through a training process in which it is required to make p
   [source] (https://medium.com/@dannymvarghese/comparative-study-on-classic-machine-learning-algorithms-part-2-5ab58b683ec0)
 
 #### Multiple Linear Regression
+> Based on multiple predictor variables X 1 ,X 2 , . . . ,X p
+trying to predict the value of 1 continuous output variable
+Y.
 
 #### Logistic Regression
 > Logistic regression returns a probability. You can use the returned probability "as is" (for example, the probability that the user will click on this ad is 0.00023) or convert the returned probability to a binary value (for example, this email is spam).
