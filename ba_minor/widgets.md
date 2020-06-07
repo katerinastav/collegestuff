@@ -25,7 +25,7 @@
 https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4 => Here is also an image that shows the Right Metric for Evaluating Machine Learning Models
 
 #### Precision 
-* percentage of items flagged as positive, taht were correctly classified
+* percentage of items flagged as positive, that were correctly classified
 * What proportion of positive identifications was actually correct? ( TP / (TP + FP) ) 
 * A model that produces no false positives has a precision of 1.0.
 
