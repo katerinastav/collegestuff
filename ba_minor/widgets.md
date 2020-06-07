@@ -37,6 +37,7 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 :warning: improving precision typically reduces recall and vice versa. Generally (But not with certainty) : 
 * Increasing CT (classification threshold) => precision increases, recall decreases
 * Decreasing CT => precision decreases, recall increases
+
 :bulb: In general, a model that outperforms another model on both precision and recall is likely the better model. Obviously, we'll need to make sure that comparison is being done at a precision / recall point that is useful in practice for this to be meaningful. For example, suppose our spam detection model needs to have at least 90% precision to be useful and avoid unnecessary false alarms. In this case, comparing one model at {20% precision, 99% recall} to another at {15% precision, 98% recall} is not particularly instructive, as neither model meets the 90% precision requirement. But with that caveat in mind, this is a good way to think about comparing models when using precision and recall.
 
 #### AUC (Area Under the ROC Curve)
@@ -58,5 +59,7 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 [Source] (https://stats.stackexchange.com/questions/56302/what-are-good-rmse-values)
 
 :warning: It is usually best to report the root mean squared error (RMSE)rather than mean squared error (MSE), because the RMSE ismeasured in the same units as the data, rather than in squaredunits, and is representative of the size of a "typical" error. 
+
 :warning: If one model's RMSE is 30% lower than another's, that is prob-ably very significant. If it is 10% lower, that is probably some-what significant. If it is only 2% better, that is probably not sig-nificant. These distinctions are especially important when weare trading off model complexity against the error measures: itis probably not worth adding another independent variable to aregression model to decrease the RMSE by only a few morepercent.
+
 [Source] (https://www.academia.edu/8738608/PERFORMANCE_COMPARISON_OF_TIME_SERIES_DATA_USING_PREDICTIVE_DATA_MINING_TECHNIQUES)
