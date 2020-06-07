@@ -53,3 +53,9 @@ model seeks to uncover some hidden classification or structure.
 
 #### Bayesian Classification 
 * The Bayesian approach to unsupervised learning provides a probabilistic method to inductive inference. In Bayesian classification class membership is expressed probabilistically that is an item is not assigned to a unique class, instead it has a probability of belonging to each of the possible classes. The classes provide probabilities for all attribute values of each item. Class membership probabilities are then determined by combining all these probabilities. Class membership probabilities of each item must sum to 1, thus there are not precise boundaries for classes: every item must be a member of some class, even though we do not know which one. When every item has a probability of no more than 0.5 in any class, the classification is not well defined because it means that classes are abundantly overlapped. On the contrary, when the probability of each instance is about 0.99 in its most probable class, the classes are well separated.
+
+
+# Other Terms
+
+#### Skewness:
+> is a quantifiable measure of how distorted a data sample is from the normal distribution.
