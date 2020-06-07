@@ -66,3 +66,12 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 :warning: If one model's RMSE is 30% lower than another's, that is prob-ably very significant. If it is 10% lower, that is probably some-what significant. If it is only 2% better, that is probably not sig-nificant. These distinctions are especially important when weare trading off model complexity against the error measures: itis probably not worth adding another independent variable to aregression model to decrease the RMSE by only a few morepercent.
 
 [Source] (https://www.academia.edu/8738608/PERFORMANCE_COMPARISON_OF_TIME_SERIES_DATA_USING_PREDICTIVE_DATA_MINING_TECHNIQUES)
+
+## Python Script
+
+> We learned to use the python script to calculate p-values in linear regression. If p-vamue less than 0.05, our results are statisticaally significant otherwise not! 
+
+:warning: DOn't forget to add the add-on: Orange3-Timeseries, otherwise you won't be able to work with p-values. In orange => Options => Add-ons => tik Orange3-Timeseries => ok => then restart orange
+
+
+
