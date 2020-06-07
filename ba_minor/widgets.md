@@ -13,6 +13,9 @@
  * Identify Outliers
 
 ## Test and Score
+
+> We use Test and Score to test the quality of the model and compare it with other models. When it comes to Regression, the best algorithm is the one with the lowest RMSE. When it comes to classification, best practise is to first look at precision and recall. They need to be the highest they can, but they also influence each other. If you try to increase the one, most likely the othr will decrease. When different models have similar recall and precision values, look at the AUC value.  This needs to be high as well. CA from what I understood is pretty much worthless and doesn't say a lot about the efficiency of the model. But if you are asked to compare models, know that more answers can be right. What is important is to give an explanation for your answer so that the teachers understand your logic. 
+
 * Test on train data uses the whole dataset for training and then for testing. This method practically always gives wrong results.
 * Test on test data: the above methods use the data from Data signal only. 
 
