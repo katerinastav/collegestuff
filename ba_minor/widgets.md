@@ -17,6 +17,7 @@ Explain your reasoning"
  * Identify Outliers
  * You have to see if things are not overlaping. If they are, then the variable is not good in seperating the values we are looking for. Example from the practise test. We want to see which variable predicts the quality of the wine better, all of the variables in the box plot overlap almost. The one that doesn't overlap much is the alcohol percentage therefore is a better variable to identify good quality wine.
 
+## Test and Score
 > We use Test and Score to test the quality of the model and compare it with other models. When it comes to Regression, the best algorithm is the one with the lowest RMSE. But sipler models are preferred because they are more general and probably can predict better with new data. SO for example, if you have to regression models and the one has fewer features, because it used lasso regularization, it might be a better model. When it comes to classification, best practise is to first look at precision and recall. They need to be the highest they can, but they also influence each other. If you try to increase the one, most likely the othr will decrease. When different models have similar recall and precision values, look at the AUC value.  This needs to be high as well. CA from what I understood is pretty much worthless and doesn't say a lot about the efficiency of the model. But if you are asked to compare models, know that more answers can be right. What is important is to give an explanation for your answer so that the teachers understand your logic. 
 
 * Test on train data uses the whole dataset for training and then for testing. This method practically always gives wrong results.
@@ -78,7 +79,7 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 
 :warning: DOn't forget to add the add-on: Orange3-Timeseries, otherwise you won't be able to work with p-values. In orange => Options => Add-ons => tik Orange3-Timeseries => ok => then restart orange
 
-Script given by lecturers: 
+**Script given by lecturers: **
 
 import pandas as pd
 
