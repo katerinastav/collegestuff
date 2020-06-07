@@ -59,3 +59,5 @@ model seeks to uncover some hidden classification or structure.
 
 #### Skewness:
 > is a quantifiable measure of how distorted a data sample is from the normal distribution.
+
+[Source] (https://deepai.org/machine-learning-glossary-and-terms/skewness)
