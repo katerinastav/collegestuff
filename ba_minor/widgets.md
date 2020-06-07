@@ -22,6 +22,7 @@
 * You have to compare accuarcy with chance. If CA is better at predicting something correct than chance would, then it is a good model.
 * CA = #correct predictions/ #total predictions ( (TP + TN)/ TP + TN + FP + FN )
 * Great source to understand how to judge an algorithm based on the test and score results: https://developers.google.com/machine-learning/crash-course/classification/accuracy
+https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-models-part-1-a99d7d7414e4 => Here is also an image that shows the Right Metric for Evaluating Machine Learning Models
 
 #### Precision 
 * percentage of items flagged as positive, taht were correctly classified
@@ -53,3 +54,9 @@
 
 #### RMSE
 
+* The lower the better 
+[Source] (https://stats.stackexchange.com/questions/56302/what-are-good-rmse-values)
+
+:warning: It is usually best to report the root mean squared error (RMSE)rather than mean squared error (MSE), because the RMSE ismeasured in the same units as the data, rather than in squaredunits, and is representative of the size of a "typical" error. 
+:warning: If one model's RMSE is 30% lower than another's, that is prob-ably very significant. If it is 10% lower, that is probably some-what significant. If it is only 2% better, that is probably not sig-nificant. These distinctions are especially important when weare trading off model complexity against the error measures: itis probably not worth adding another independent variable to aregression model to decrease the RMSE by only a few morepercent.
+[Source] (https://www.academia.edu/8738608/PERFORMANCE_COMPARISON_OF_TIME_SERIES_DATA_USING_PREDICTIVE_DATA_MINING_TECHNIQUES)
