@@ -14,9 +14,9 @@ A model is prepared through a training process in which it is required to make p
 > To predict the outcome of a given sample where the output variable is in the form of real values. Examples include real-valued labels denoting the amount of rainfall, the height of a person.
 
 #### Simple Linear Regression 
-+ Easy simple implementation
+++ Easy simple implementation
 + Fast training
-- applicable only if solution is linear (real life mostly not) 
+-- applicable only if solution is linear (real life mostly not) 
 ! Comparison Desicion tree:
   - supports non linearity
   - In general, DT better average accuracy
