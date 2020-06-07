@@ -73,5 +73,31 @@ https://medium.com/usf-msds/choosing-the-right-metric-for-machine-learning-model
 
 :warning: DOn't forget to add the add-on: Orange3-Timeseries, otherwise you won't be able to work with p-values. In orange => Options => Add-ons => tik Orange3-Timeseries => ok => then restart orange
 
+Script given by lecturers: 
 
+import pandas as pd
+import numpy as np
+from sklearn import datasets, linear_model
+from sklearn.linear_model import LinearRegression
+import statsmodels.api as sm
+from scipy import stats
+
+training = in_data
+print(training.domain.attributes)
+print(training.domain.class_var)
+
+#print(training.X)
+print(training.Y)
+
+x = training.X
+y = training.Y
+
+#http://www.statsmodels.org/dev/regression.html
+X2 = sm.add_constant(x)
+#est = sm.OLS(y, X2,missing='drop')
+est = sm.OLS(y,X2)
+est2 = est.fit()
+print(est2.summary())
+
+:warning: If script doesn't seem to work maybe there are missing values in the table, in that case comment est and uncomment the other version of est that drops the missing values
 
