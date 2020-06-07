@@ -15,15 +15,15 @@ A model is prepared through a training process in which it is required to make p
 
 #### Simple Linear Regression 
 ++ Easy simple implementation
-+ Fast training
+++ Fast training
 -- applicable only if solution is linear (real life mostly not) 
 ! Comparison Desicion tree:
-  - supports non linearity
-  - In general, DT better average accuracy
-  + When there are large number of features with less data-sets (low noise) LR may outperform DT
-  - For categorical independent variables DT are better than LR
+  -- supports non linearity
+  -- In general, DT better average accuracy
+  ++ When there are large number of features with less data-sets (low noise) LR may outperform DT
+  -- For categorical independent variables DT are better than LR
 ! Comparison with KNN
-  + KNN is slower
+  ++ KNN is slower
   
   source: https://towardsdatascience.com/comparative-study-on-classic-machine-learning-algorithms-24f9ff6ab222
   [source] (https://medium.com/@dannymvarghese/comparative-study-on-classic-machine-learning-algorithms-part-2-5ab58b683ec0)
@@ -34,21 +34,21 @@ A model is prepared through a training process in which it is required to make p
 > Logistic regression returns a probability. You can use the returned probability "as is" (for example, the probability that the user will click on this ad is 0.00023) or convert the returned probability to a binary value (for example, this email is spam).
 * In order to map a logistic regression value to a binary category, you must define a classification threshold (also called the decision threshold). A value above that threshold indicates "spam"; a value below indicates "not spam." It is tempting to assume that the classification threshold should always be 0.5, but thresholds are problem-dependent, and are therefore values that you must tune.
 
-+ Easy simple classification method
-+ Fast training
-- applicable only if solution is linear (real life mostly not) 
+++ Easy simple classification method
+++ Fast training
+-- applicable only if solution is linear (real life mostly not) 
 ! Comparison Desicion tree:
-  - supports non linearity
-  + DT cannot derive the significance of features, but LR does
+  -- supports non linearity
+  ++ DT cannot derive the significance of features, but LR does
  
 ! Comparison with KNN
-  + KNN is slower
-  - KNN supports non-linear solutions
-  + LR can derive confidence level (about its prediction), whereas KNN can only output the labels.
+  ++ KNN is slower
+  -- KNN supports non-linear solutions
+  ++ LR can derive confidence level (about its prediction), whereas KNN can only output the labels.
   
 ! Comparison with Naive Bayes
-  + Naive bayes works well with small datasets, whereas LR+regularization can achieve similar performance.
-  + LR performs better than naive bayes upon colinearity, as naive bayes expects all features to be independent.
+  ++ Naive bayes works well with small datasets, whereas LR+regularization can achieve similar performance.
+  ++ LR performs better than naive bayes upon colinearity, as naive bayes expects all features to be independent.
 
 [source] (https://developers.google.com/machine-learning/crash-course/classification/thresholding)
 
@@ -59,58 +59,58 @@ A model is prepared through a training process in which it is required to make p
 * Naive bayes is preferred when the features are mutually independent and have limited training data.
 * Naive bayes is highly used in text classification, spam filtering, recommender systems etc.
 
-+ works well with less training data.
-+ If NB conditional independence is satisfied, it converges faster than other discriminative models.
-+ Handles irrelevant features.
-+ Supports binary and multi-class classification problems.
-- expects the features to be strictly independent to each other, which is not applicable in real life scenarios.
-- While training sample of a large population, and if we have a feature with P(X=feature|Y) as zero, the posterior probability will become zero. This happens when the sample is not representing the population properly.
-- continuous variables are binned to extract discrete values from features. This task should be carefully done to avoid data loss.
+++ works well with less training data.
+++ If NB conditional independence is satisfied, it converges faster than other discriminative models.
+++ Handles irrelevant features.
+++ Supports binary and multi-class classification problems.
+-- expects the features to be strictly independent to each other, which is not applicable in real life scenarios.
+-- While training sample of a large population, and if we have a feature with P(X=feature|Y) as zero, the posterior probability will become zero. This happens when the sample is not representing the population properly.
+-- continuous variables are binned to extract discrete values from features. This task should be carefully done to avoid data loss.
 
 #### KNN
 * finds a group of k objects in the training set that are closest to the test object, and bases the assignment of a label on the predominance of a particular class in this neighborhood. 
 
-+ easy simple learning model
-- k should be wisely selected
-- large computation cost if sample large
-- proper scaling should be provided for fait treatment among features
+++ easy simple learning model
+-- k should be wisely selected
+-- large computation cost if sample large
+-- proper scaling should be provided for fait treatment among features
 
 ! Comparison with Naive Bayes
-  - KNN slower because of real-time execution
+  -- KNN slower because of real-time execution
   
 ! Comparison with Linear regression:
-  + KNN Better when data have high SNR
+  ++ KNN Better when data have high SNR
 
 #### Desicion Tree 
 * Decision trees are the most developed methods for partitioning sets of items into classes.
 > Decision tree is a tree based algorithm used to solve regression and classification problems.
 
-+ No preprocessing needed on data
-+ No assumptions on distribution of data.
-+ Handles colinearity efficiently.
-+ Decision trees can provide understandable explanation over the prediction.
-- Chances for overfitting the model if we keep on building the tree to achieve high purity. decision tree pruning can be used to solve this issue.
-- Prone to outliers.
-- Tree may grow to be very complex while training complicated datasets.
-- Looses valuable information while handling continuous variables.
+++ No preprocessing needed on data
+++ No assumptions on distribution of data.
+++ Handles colinearity efficiently.
+++ Decision trees can provide understandable explanation over the prediction.
+-- Chances for overfitting the model if we keep on building the tree to achieve high purity. decision tree pruning can be used to solve this issue.
+-- Prone to outliers.
+-- Tree may grow to be very complex while training complicated datasets.
+-- Looses valuable information while handling continuous variables.
 
 ! Comparison KNN
-  + DT supports automatic feature interaction
-  + faster
+  ++ DT supports automatic feature interaction
+  ++ faster
   
 ! Comparison Naive Bayes
-  + Decision tree is a discriminative model, whereas Naive bayes is a generative model.
-  + Decision trees are more flexible and easy.
-  - Decision tree pruning may neglect some key values in training data, which can lead the accuracy for a toss.
+  ++ Decision tree is a discriminative model, whereas Naive bayes is a generative model.
+  ++ Decision trees are more flexible and easy.
+  -- Decision tree pruning may neglect some key values in training data, which can lead the accuracy for a toss.
   
 #### Random Forest 
 > Random Forest is an ensemble model where, multiple decision trees are combined to get a stronger model. The derived model will be more robust, accurate and handles overfitting better than constituent models.
 
-+ Accurate and powerful model.
-+ handles overfitting efficiently.
-+ Supports implicit feature selection and derives feature importance.
-- computationally complex and slower when forest becomes large.
-- Not a well descriptive model over the prediction.
+++ Accurate and powerful model.
+++ handles overfitting efficiently.
+++ Supports implicit feature selection and derives feature importance.
+-- computationally complex and slower when forest becomes large.
+-- Not a well descriptive model over the prediction.
 
 ! Comparison with Naive Bayes
   * Random Forest is a complex and large model whereas Naive Bayes is a relatively smaller model.
