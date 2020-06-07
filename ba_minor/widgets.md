@@ -126,3 +126,8 @@ print(est2.summary())
 
 :warning: If script doesn't seem to work maybe there are missing values in the table, in that case comment est and uncomment the other version of est that drops the missing values
 
+## Association Rules
+
+:warning: Install add-on Ora,ge3-Associate
+
+:warning: Don't remember for what anymore, but you might need the educational add-on somewhere as well
