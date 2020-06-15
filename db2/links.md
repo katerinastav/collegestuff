@@ -3,7 +3,8 @@ https://www.dbta.com/Columns/DBA-Corner/Top-10-Steps-to-Building-Useful-Database
 Examples:
 
 * Create Index 
-``` create unique index bezoeken_primary_key_idx
+``` 
+create unique index bezoeken_primary_key_idx
 on bezoeken (reisnr, volgnr);
 ```
 * View size of db
