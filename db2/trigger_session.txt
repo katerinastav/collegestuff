@@ -1,0 +1,165 @@
+katerina@katerina:~/Documents/collegestuff/db2$ sudo -u postgres psql
+[sudo] password for katerina: 
+psql (12.3 (Ubuntu 12.3-1.pgdg20.04+1))
+Type "help" for help.
+
+postgres=# \dt
+Did not find any relations.
+postgres=# \dn
+  List of schemas
+  Name  |  Owner   
+--------+----------
+ public | postgres
+(1 row)
+
+postgres=# \db
+       List of tablespaces
+    Name    |  Owner   | Location 
+------------+----------+----------
+ pg_default | postgres | 
+ pg_global  | postgres | 
+(2 rows)
+
+postgres=# \d
+Did not find any relations.
+postgres=# help
+You are using psql, the command-line interface to PostgreSQL.
+Type:  \copyright for distribution terms
+       \h for help with SQL commands
+       \? for help with psql commands
+       \g or terminate with semicolon to execute query
+       \q to quit
+postgres=# \h
+postgres=# create schema tellen;
+CREATE SCHEMA
+postgres=# set search_path to tellen;
+SET
+postgres=# create table moet_geteld_worden as select 'constante' as c, generate_series(1, 10000) as t;
+SELECT 10000
+postgres=# select count(*) from moet_geteld_worden ;
+ count 
+-------
+ 10000
+(1 row)
+
+postgres=# analyze select count(*) from moet_geteld_worden ;
+ERROR:  syntax error at or near "select"
+LINE 1: analyze select count(*) from moet_geteld_worden ;
+                ^
+postgres=# explain select count(*) from moet_geteld_worden ;
+                                  QUERY PLAN                                  
+------------------------------------------------------------------------------
+ Aggregate  (cost=180.00..180.01 rows=1 width=8)
+   ->  Seq Scan on moet_geteld_worden  (cost=0.00..155.00 rows=10000 width=0)
+(2 rows)
+
+postgres=# create view tellen(c) as select count(*) from moet_geteld_worden ;
+CREATE VIEW
+postgres=# select * from tellen;
+   c   
+-------
+ 10000
+(1 row)
+
+postgres=# create materialized view mat_tellen(c) as select count(*) from moet_geteld_worden ;
+SELECT 1
+postgres=# refresh materialized view mat_tellen ;
+REFRESH MATERIALIZED VIEW
+postgres=# create table teller_tabel(c integer);
+CREATE TABLE
+postgres=# insert into teller_tabel select count(*) from moet_geteld_worden ;
+INSERT 0 1
+postgres=# select * from teller_tabel ;
+   c   
+-------
+ 10000
+(1 row)
+
+postgres=# start transaction isolation level serializable;
+START TRANSACTION
+postgres=# create or replace function teller()
+postgres-# returns trigger
+postgres-# language plpgsql
+postgres-# as
+postgres-# $$
+postgres$# begin
+postgres$# -- insert +1 per rij
+postgres$# -- insert moet hoofdletters, kleine niet gedefineerd voor TG_OP
+postgres$# IF TG_OP='INSERT' THEN update teller_tabel set teller=teller+1;
+postgres$# END IF;
+postgres$# --delete -1 per rij
+postgres$# IF TG_PO='DELETE' THEN update teller_tabel set teller=teller-1;
+postgres$# END IF;
+postgres$# --update niets doen
+postgres$# RETURN new;
+postgres$# END;
+postgres$# $$;
+CREATE FUNCTION
+postgres=# create trigger "teller.trg"
+postgres-# AFTER INSERT OR DELETE
+postgres-# ON moet_geteld_worden
+postgres-# FOR EACH ROW
+postgres-# EXECUTE PROCEDURE teller();
+CREATE TRIGGER
+postgres=# commit;
+COMMIT
+postgres=# select * from teller_tabel ;
+   c   
+-------
+ 10000
+(1 row)
+
+postgres=# alter table teller_tabel rename c to teller;
+ALTER TABLE
+postgres=# \teller_tabel
+invalid command \teller_tabel
+Try \? for help.
+postgres=# \d teller_tabel
+            Table "tellen.teller_tabel"
+ Column |  Type   | Collation | Nullable | Default 
+--------+---------+-----------+----------+---------
+ teller | integer |           |          | 
+
+postgres=# insert into moet_geteld_worden values('e', 4);
+ERROR:  column "tg_po" does not exist
+LINE 1: SELECT TG_PO='DELETE'
+               ^
+QUERY:  SELECT TG_PO='DELETE'
+CONTEXT:  PL/pgSQL function teller() line 8 at IF
+postgres=# start transaction isolation level serializable;
+START TRANSACTION
+postgres=# create or replace function teller()
+returns trigger
+language plpgsql
+as
+$$
+begin
+-- insert +1 per rij
+-- insert moet hoofdletters, kleine niet gedefineerd voor TG_OP
+IF TG_OP='INSERT' THEN update teller_tabel set teller=teller+1;
+END IF;
+--delete -1 per rij
+IF TG_OP='DELETE' THEN update teller_tabel set teller=teller-1;
+END IF;
+--update niets doen
+RETURN new;
+END;
+$$;
+CREATE FUNCTION
+postgres=# commit;
+COMMIT
+postgres=# insert into moet_geteld_worden values('e', 4);
+INSERT 0 1
+postgres=# select count(*) from moet_geteld_worden ;
+ count 
+-------
+ 10001
+(1 row)
+
+postgres=# select * from teller_tabel;
+ teller 
+--------
+  10001
+(1 row)
+
+postgres=# 

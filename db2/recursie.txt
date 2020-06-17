@@ -1,0 +1,18 @@
+CREATE OR REPLACE PROCEDURE boom_pg_type_proc()
+    LANGUAGE plpgsql    
+    AS $$
+    BEGIN
+        --DECLARE CONTINUE HANDLER FOR SQLSTATE '42S02';
+        CREATE TABLE boom_pg_type as
+        WITH RECURSIVE pad_van(oid, typname, typarray, pad) AS 
+        (SELECT oid, typname, typarray, ARRAY[typarray] as pad from pg_catalog.pg_type
+         UNION ALL
+         SELECT f.oid, f.typname, f.typarray,  
+         CAST(p.typarray || array[f.typarray] as oid[]) as pad
+         FROM pg_catalog.pg_type f, pad_van p
+         WHERE f.typarray = p.oid)
+        SELECT  * FROM  pad_van
+        order by oid;
+        COMMIT;
+    END;
+    $$;

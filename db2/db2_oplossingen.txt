@@ -1,0 +1,309 @@
+dingleyzvandaag om 11:42
+moetge nog wa opgaves hebben om te oefenen? @TheRealBillChoi
+kzal ze gewoon posten
+
+TheRealBillChoivandaag om 11:43
+Nice!
+dingleyzvandaag om 11:43
+
+da waren mijn examenvragen
+de eerste was poepsimpel
+gewoon case me 1 inner join :clown:
+Way2Pinvandaag om 11:51
+is het nu op school of niet want
+er staat wel boven info over het examen in de hemisfeer ?
+spoobavandaag om 11:52
+ja, op school in de hemisfeer ipv thuis maar zelfde soort examen
+Samsonvandaag om 11:53
+Mijn vragen:
+
+Was juist, Aimée zei me wel dat het niet wilt zeggen als het juist is dat je volle 6 punten krijgt, wordt nog beoordeeld op performatie, juistheid
+Eerste vraag zie k da k nog kleinste tabel eerst moet zetten
+dingleyzvandaag om 11:58
+ja maar als sqldropbox u antwoord al correct vind hebje toch al 2 punten
+en ik denk dat meeste mensen de replicatie vraag wel hadden
+en als je dan u 4 punten hebt behaald door alle opdrachten op tijd te maken
+komtge al snel aan een 8/20
+Way2Pinvandaag om 11:59
+ik had mijn replicatie gedan zoals in die zijn labo maar om een of andere reden kon ik die niet zien op fuji zelf
+die nam die subscription wel aan
+dingleyzvandaag om 11:59
+ja nee hij had die permissions gedisabled
+Way2Pinvandaag om 11:59
+kvraag me af wa ik dan vergeten ben
+ah oke
+ma hoe kan die dan zien da ge da gedaan hebt? wnt die ziet toch ni wa ge invoerd op uw lokale databank?
+dingleyzvandaag om 12:00
+gekon nie SELECT * FROM pg_subscription doen
+als het da is wa ge bedoeld
+Way2Pinvandaag om 12:00
+die krijgt ng wel die aanvragen zien ofwa
+dingleyzvandaag om 12:00
+hij kan gewoon SELECT * FROM pg_subscription doen
+want gemoes da me u r nummer doen
+dus wss als u r-nummer daar tussen stond kreeg ge 2 punten
+TheRealBillChoivandaag om 12:00
+Ik heb die select wel kunnen doen
+Way2Pinvandaag om 12:00
+ja ma ik heb op fuji zo'n lijst kunnen opvragen, ma mijn nr stond er ni tussen
+Katerinavandaag om 12:00
+Dat waren mijn vragen, de queries in sqldropbox gaven dezelfde resultaat, maar sqldropox zei dat ze niet de correcte querries waren
+Bestandstype van bijlage: archive
+db2eexamen.zip
+172.88 KB
+TheRealBillChoivandaag om 12:01
+Ik zag iedereen zen subscriptions ertussen staan
+dingleyzvandaag om 12:01
+wat bij mij zij da geen permission
+TheRealBillChoivandaag om 12:01
+En de mijne dus ook
+En als ik iets aanpaste was da ook lokaal
+Dus idk
+dingleyzvandaag om 12:01
+ja alsge iets op fuji aanpaste en de aanpassing bij u lokaal zag
+hadge da juist
+Way2Pinvandaag om 12:01
+ik kon da ni zien
+ma die subscription as ik die maakte nam em wel aan
+welke commando's moe ge daar allemaal voor doen buiten die create subscription?
+TheRealBillChoivandaag om 12:02
+Eerst uw schema backuppen en restoren zonder de data
+dingleyzvandaag om 12:02
+^
+TheRealBillChoivandaag om 12:02
+En dan uw subscription creeren
+Way2Pinvandaag om 12:02
+ja ik had da vergeten, en erna gedaan, mss magda ni
+dingleyzvandaag om 12:03
+das raar want normaal kuntge dan nieens die subscription makne
+TheRealBillChoivandaag om 12:03
+Als ge die die github volgt van Martijn daar staat t perfect in
+dingleyzvandaag om 12:03
+als ik het me goed herinner toch
+Dezdekkevandaag om 12:03
+>
+
+
+Way2Pinvandaag om 12:03
+ja da moe ng weg denk ik
+hoop ik
+TheRealBillChoivandaag om 12:03
+@Dezdekke ja die wiki pagina is nog van de vorige mail
+Das niemeer geupdate sindsdien
+Ik vind da zelf ook wel ambetant
+Want das weer verwarring
+Als da binnen een uur of 2 nie aangepast is op die wiki zal ik es mailen
+Way2Pinvandaag om 12:05
+da is ni op wiki
+das op trello
+voor in te schrijven
+TheRealBillChoivandaag om 12:06
+Ja ma ook op die nieuws pagina op projectwerk
+Way2Pinvandaag om 12:06
+ah
+TheRealBillChoivandaag om 12:06
+Sorry projektwerk
+-__-
+phonkrit99vandaag om 12:07
+
+
+Dees waren mijn vragen
+Way2Pinvandaag om 12:08
+Sorry projektwerk
+@TheRealBillChoi korrekt
+Dezdekkevandaag om 12:12
+Als da binnen een uur of 2 nie aangepast is op die wiki zal ik es mailen
+@TheRealBillChoi Tis aangepast
+Abelvandaag om 12:13
+
+khad gemailt en het is dus idd weg gehaald nu
+wswgsgwsdvandaag om 12:18
+@elines
+Jaspervandaag om 12:20
+Wat meer info waarom het niet op een andere dag kon doorgaan
+
+Way2Pinvandaag om 12:23
+zou aimée eig heel dat examen van BA Minor op poten hebben gezet? want dat liep wel vlot :p
+Katerinavandaag om 12:37
+omdat ze simpel ging met gewoon x.toledo. meneer Bertels forceert zijn eigen applicaties te veel...
+Abelvandaag om 12:44
+^
+Way2Pinvandaag om 12:48
+zelfs zijn eigen voorkeur voor extensies :p
+Jaspervandaag om 13:14
+heeft er iemand de oplossing voor de derde oefening van het examen? want daar ben ik wel redelijk ver in de mist gegaan
+wswgsgwsdvandaag om 13:25
+Welke oefening had je
+Zo een script maken ?
+Want da was ook anders per groep/persoon
+Way2Pinvandaag om 13:35
+dat was bij mij een transactie maken met alter table voor structuur te verbeteren en create index for optimalisatie
+ジョナスvandaag om 13:35
+same
+Way2Pinvandaag om 13:35
+ma ge kon het niet testen want we hadden geen rechten
+het was me ook ni echt duidelijk ofda in een function moest gedaan worden
+want op zich as ge een hele transactie schrijft zonder function rond isda per definitie ook een script :p
+Jaspervandaag om 15:26
+deze
+
+ジョナスvandaag om 15:39
+Ge gaat wss ergens een alter table moeten doen en voor het tweede ding van performantie ist indexing en gedoe om u cost te verlagen
+Ik had andere db
+Way2Pinvandaag om 16:15
+ik ook berenklauw
+wswgsgwsdvandaag om 16:38
+Bij de replicatievraag, moest je uw database r.... zo backup doen of enkel da schema ?
+Way2Pinvandaag om 16:38
+welk schema moest ge trouwens backupen
+ik had daar enkel public en pgbouncer staan
+ik heb public ge backuped
+wswgsgwsdvandaag om 16:43
+same lmao
+ik kreeg da schema met die rare naam pas rond half 12
+en moesten we de publication ook zelf maken of ni ?
+Way2Pinvandaag om 16:45
+na da vroeg ik me ook net af
+wnt da ben ik dn vergeten, dacht da die al klaar stond
+wswgsgwsdvandaag om 16:46
+ja dacht ik ook
+ジョナスvandaag om 18:03
+iemand die deze query had?
+
+phonkrit99vandaag om 18:14
+
+Iemand dat deze error weet op te lossen?
+Dat is wanneer ik een procedure wil oproepen
+dingleyzvandaag om 18:14
+enkel procedures kunnen met transaction werken
+phonkrit99vandaag om 18:26
+Thanks het is gelukt
+Samsonvandaag om 18:38
+Dit is mijn antwoord vraag 4 en tabel ziet er goe uit:
+CREATE OR REPLACE PROCEDURE boom_pg_type_proc()
+    LANGUAGE plpgsql    
+    AS $$
+    BEGIN
+        --DECLARE CONTINUE HANDLER FOR SQLSTATE '42S02';
+        CREATE TABLE boom_pg_type as
+        WITH RECURSIVE pad_van(oid, typname, typarray, pad) AS 
+        (SELECT oid, typname, typarray, ARRAY[typarray] as pad from pg_catalog.pg_type
+         UNION ALL
+         SELECT f.oid, f.typname, f.typarray,  
+         CAST(p.typarray || array[f.typarray] as oid[]) as pad
+         FROM pg_catalog.pg_type f, pad_van p
+         WHERE f.typarray = p.oid)
+        SELECT  * FROM  pad_van
+        order by oid;
+        COMMIT;
+    END;
+    $$;
+enkel snap ik ni wat bertels bedoelt met 'test nagekeken', ik dacht iets met handler te doen maar werkt niet
+Way2Pinvandaag om 18:40
+iemand die deze query had?
+@ジョナス ik maar niet helemaal gevonden
+ジョナスvandaag om 18:43
+@ジョナス ik maar niet helemaal gevonden
+@Way2Pin dm mij wat ge had, miss kan ik het dan toch vinden
+Way2Pinvandaag om 18:43
+CV na het eten
+Way2Pinvandaag om 19:46
+@ジョナス ik kan niet aan mijn sql dropbox, staan geen oefeningen meer op
+ジョナスvandaag om 19:46
+dw about it
+Way2Pinvandaag om 19:50
+wat had gij
+ik was aan het joinen met h1.objectnaam = h2.satelliet van enzo
+ma op zich kunt ge het ook met union all doen
+ma das ni zo performant
+spoobavandaag om 19:51
+kheb die net geprobeerd en had dit
+select h.objectnaam,case when (select count(objectnaam)
+                 from hemelobjecten h1
+            where afstand > 500 and h1.satellietvan = h.objectnaam ) > 0 then (select    count(objectnaam)::text
+            from hemelobjecten h1
+             where afstand > 500 and h1.satellietvan = h.objectnaam )
+             else 'Geen'
+               end as "ver verwijderde satellieten"
+from hemelobjecten h
+    left outer join hemelobjecten sat on h.objectnaam = sat.satellietvan
+where h.satellietvan = 'Zon'
+group by h.objectnaam
+order by 1 desc
+Way2Pinvandaag om 19:52
+da lijkt op wat ik had
+aleen had ik gn subquery in mijn case
+ik wist niet meer hoe dat moest
+kunt ge niet gwn inner join doen hier?
+spoobavandaag om 19:54
+bij inner join laat hij de planeten zonder satellieten weg
+Way2Pinvandaag om 19:55
+ahja just
+spoobavandaag om 20:04
+Dat waren mijn vragen, de queries in sqldropbox gaven dezelfde resultaat, maar sqldropox zei dat ze niet de correcte querries waren
+@Katerina Ik zag dat in u query waar je de periode moest geven van wanneer de leden actief waren dat je op het einde in u where jaartoe gebruikt ipv geb_datum en in de order by jaartoe ipv begin_datum, kan het dat ze daarom verkeerd was?
+Katerinavandaag om 20:06
+ja ik ben het nu aan het kijken en turns out ik wist echt niet wat ik aan het doen was xD maar ik kon ook niet naar de gewone databank connecteren dus het was meer gokken. Ik wist gewoon dat de syntax juist was voor tennis.
+Als ik het nu oplos stuur ik wel de antwoorden
+Way2Pinvandaag om 20:23
+kzal ze gewoon posten
+@dingleyz als ik die makkelijk doe zet die die betalingsnr 7 altijd als eerste bij mij? 
+select naam, spelersnr, betalingsnr, bedrag, case 
+when bedrag > 0 and bedrag <= 40 then 'laag'
+when bedrag >40 and bedrag <=80 then 'middelmatig'
+else 'hoog'
+end as categorie
+from spelers inner join boetes using(spelersnr)
+order by 1
+snap ni voorwa da anders is dan hun uitvoer
+dingleyzvandaag om 20:23
+kzal mijn oplossing postte
+die goed was volgens sqldropbox
+ah wa kan da nie meer zine
+Way2Pinvandaag om 20:23
+ma dees geeft exact hetzelfde
+dingleyzvandaag om 20:24
+ahh
+Way2Pinvandaag om 20:24
+alleen verplaatst die betalingsnr 7 naar boven
+dingleyzvandaag om 20:24
+SELECT naam, sp.spelersnr, betalingsnr, bedrag, 
+    CASE 
+        WHEN bedrag BETWEEN 0 AND 40  THEN 'laag'
+        WHEN bedrag BETWEEN 40 AND 80 THEN 'middelmatig'
+        ELSE 'hoog'
+    END as categorie
+FROM spelers sp INNER JOIN boetes bo USING (spelersnr)
+ORDER BY 1
+idk ik had dit gwn
+ja letterlijk hetzelfde
+Way2Pinvandaag om 20:24
+
+heel vreemd
+ik ga ook si me between proberen
+nee makt ni uit
+Way2Pinvandaag om 20:33
+whatever
+Katerinavandaag om 21:14
+ 
+select voorletters, naam, functie, ('actief: ' || case when eind_datum is null then 'sinds ' ||  to_char( begin_datum, 'DD/MM/YYYY') 
+        else 'van ' ||  to_char( begin_datum, 'DD/MM') || ' tot ' || to_char( eind_datum, 'DD/MM/YYYY') end) as periode
+from spelers inner join bestuursleden
+using(spelersnr)
+where geb_datum < '1970-08-05'
+order by naam, begin_datum
+
+Katerinavandaag om 21:34
+select reisnr, volgnr, objectnaam, verblijfsduur, 
+sum(verblijfsduur) over(partition by reisnr 
+                        order by volgnr 
+                        rows between unbounded preceding and 
+                        current row) as inc_duur, 
+                        sum(verblijfsduur) 
+                        over(rows between unbounded preceding 
+                             and unbounded following ) 
+                             as tot_duur
+from bezoeken inner join reizen using(reisnr)
+group by 1, 2, 3, reisduur, vertrekdatum
+order by 1, 2, 3, 4, 5, 6
+
